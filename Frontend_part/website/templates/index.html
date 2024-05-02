@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Script
+{% endblock %}
+
+{% block src %}
+<script type="text/python" src="{{ url_for('static',filename='code/get_image.py') }}"></script>
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/title.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/general.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/input_part.css') }}">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/display_part.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="title-part">
+    <label class="title">Tamil Script Recognition</label>
+</div>
+
+
+<div class="form-section">
+
+    <div id="form" class="input-group">
+        <input type="file" class="form-control" id="form-image" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+        <button class="btn btn-outline-secondary" type="button" id="Submit_pic">Predict</button>
+      </div>
+
+</div>
+
+
+
+
+
+
+<div id="display" class="display-div">
+    <!-- <div>
+        
+    <label class="image-title">Image:-</label>
+    </div>
+    <div>
+        <img class="image-display" src="{{ url_for('static',filename='temp_images/image.JPG') }}">
+
+
+    </div>
+    <div class="prediction-label">
+        prediction:-p
+    </div> -->
+</div>
+
+
+
+
+{% endblock %}

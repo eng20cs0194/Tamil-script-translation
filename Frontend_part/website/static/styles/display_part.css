@@ -1,0 +1,27 @@
+.display-div{
+display:block;
+
+margin-top:30px; ;
+
+}
+.image-title{
+    margin-left:600px ;
+    font-size:30px;
+}
+
+.image-display{
+    margin-left:500px;
+    margin-top:20px;
+    width:300px;
+}
+
+.prediction-label{
+    margin-top:20px;
+    margin-left:520px;
+    font-size:30px;
+}
+
+
+
+
+
